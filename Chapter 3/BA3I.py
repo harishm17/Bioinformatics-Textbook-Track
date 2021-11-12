@@ -31,3 +31,5 @@ def k_universal(k):
     for i in cycle:
         genome += i[-1]
     return genome
+
+print(k_universal(int(input())))
