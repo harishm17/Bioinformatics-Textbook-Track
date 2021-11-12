@@ -1,3 +1,9 @@
+def Composition(k, Text):
+    comp = []
+    for i in range(len(Text) - k + 1):
+        comp.append(Text[i:i + k])
+    return comp
+
 def DeBruijn(k, Text):
     over = {}
     kmers = Composition(k, Text)
